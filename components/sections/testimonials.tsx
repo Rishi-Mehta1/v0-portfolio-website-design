@@ -26,30 +26,30 @@ export default function Testimonials() {
     {
       quote:
         "Kunj is an exceptional researcher with an unwavering commitment to excellence. Their work has significantly contributed to our lab's research outcomes.",
-      author: "Dr. Sarah Johnson",
-      role: "Research Director",
-      organization: "Innovation Research Lab",
+      author: "Dr. Deepak Sahu",
+      role: "Assistant Professor",
+      organization: "Pandit Deendayalal Energy University",
     },
     {
       quote:
         "As a mentor, Kunj brings warmth, guidance, and genuine care. They make complex concepts accessible and inspire confidence in their mentees.",
-      author: "Prof. Michael Chen",
-      role: "Academic Mentor",
-      organization: "University Partnership",
+      author: "Unknown",
+      role: "2nd Year CSE student",
+      organization: "Pandit Deendayalal Energy University",
     },
     {
       quote:
         "Kunj's leadership transformed our team dynamics. Their ability to inspire and coordinate diverse talents is remarkable.",
-      author: "Emma Rodriguez",
+      author: "Maurya Darji",
       role: "Team Member",
-      organization: "Tech Initiative",
+      organization: "Team Rocket",
     },
     {
       quote:
-        "The global awareness and ethical mindset that Kunj brings to every project is inspiring. They're truly making a difference.",
-      author: "Prof. David Okonkwo",
-      role: "Sustainability Coordinator",
-      organization: "Global Scholars Forum",
+        "The commitment to global safety, ethical innovation, and community well-being that Kunj brings to the Tourist Safety Project is truly inspiring. Their dedication to protecting travelers and promoting responsible tourism is making a real difference.",
+      author: "Dr Santosh Kumar Bharti",
+      role: "Hackathon Coordinator",
+      organization: "TeenTitansGo",
     },
   ]
 

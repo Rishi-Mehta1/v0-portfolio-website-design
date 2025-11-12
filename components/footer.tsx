@@ -1,7 +1,36 @@
 "use client"
-import { Github, Linkedin, Twitter, Mail } from "lucide-react"
+import { Github, Linkedin, Mail, Phone } from "lucide-react"
+import { useState } from "react"
 
 export default function Footer() {
+  const [copied, setCopied] = useState(false)
+
+  const handleGmailClick = (e) => {
+    e.preventDefault()
+    const gmailUrl =
+      "https://mail.google.com/mail/?view=cm&fs=1&to=kunjshahstudy@gmail.com&su=Hello%20Kunj&body=Hi%20Kunj%2C%20I%20came%20across%20your%20portfolio%20and%20wanted%20to%20connect!"
+    window.open(gmailUrl, "_blank", "noopener,noreferrer")
+  }
+
+  const handleCallClick = async (e) => {
+    e.preventDefault()
+    const phoneNumber = "+917574055463"
+    try {
+      await navigator.clipboard.writeText(phoneNumber)
+      setCopied(true)
+      setTimeout(() => setCopied(false), 2000)
+    } catch (err) {
+      console.error("Failed to copy number:", err)
+    }
+  }
+
+  const socialLinks = [
+    { icon: Github, href: "https://github.com/KunjShah1935", type: "link" },
+    { icon: Linkedin, href: "https://www.linkedin.com/in/kunj-shah-a9228928a/", type: "link" },
+    { icon: Mail, onClick: handleGmailClick, type: "button" },
+    { icon: Phone, onClick: handleCallClick, type: "button" },
+  ]
+
   return (
     <footer className="border-t border-border bg-card py-12 px-4 sm:px-6 lg:px-8">
       <div className="max-w-6xl mx-auto">
@@ -41,22 +70,34 @@ export default function Footer() {
           <div>
             <h4 className="font-bold mb-4">Connect</h4>
             <div className="flex gap-3">
-              {[
-                { icon: Github, href: "#" },
-                { icon: Linkedin, href: "#" },
-                { icon: Twitter, href: "#" },
-                { icon: Mail, href: "#" },
-              ].map((social, idx) => {
+              {socialLinks.map((social, idx) => {
                 const Icon = social.icon
-                return (
+                return social.type === "link" ? (
                   <a
                     key={idx}
                     href={social.href}
+                    target="_blank"
+                    rel="noopener noreferrer"
                     className="p-2 rounded-lg border border-border hover:border-primary hover:bg-muted transition-all hover:text-primary"
                     aria-label="Social link"
                   >
                     <Icon size={18} />
                   </a>
+                ) : (
+                  <button
+                    key={idx}
+                    onClick={social.onClick}
+                    className="relative p-2 rounded-lg border border-border hover:border-primary hover:bg-muted transition-all hover:text-primary"
+                    aria-label="Social button"
+                  >
+                    <Icon size={18} />
+                    {/* Tooltip for "Copied" */}
+                    {social.icon === Phone && copied && (
+                      <span className="absolute -top-8 left-1/2 -translate-x-1/2 bg-primary text-primary-foreground text-xs rounded-md px-2 py-1 shadow-md">
+                        📞 Number copied!
+                      </span>
+                    )}
+                  </button>
                 )
               })}
             </div>

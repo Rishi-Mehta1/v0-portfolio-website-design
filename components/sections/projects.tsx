@@ -24,58 +24,82 @@ export default function Projects() {
 
   const projects = [
     {
-      title: "AI Research Platform",
-      category: "Research",
-      image: "/ai-research-platform-dashboard.jpg",
-      description: "Developed an innovative platform for collaborative AI research",
+      title: "Smart Traffic Signal System for Ambulance Detection",
+      category: "Research & Innovation",
+      image: "/report.png",
+      description: "Developed an intelligent traffic control system that prioritizes ambulances using sensor-based detection.",
       details:
-        "Led the development of a comprehensive AI research platform using React and Python. Implemented machine learning algorithms for data analysis and created interactive visualizations for research findings.",
-      achievements: ["Published 2 papers", "Used by 50+ researchers", "3x faster analysis"],
+        "Designed and implemented a smart traffic management system that detects approaching ambulances through sensors and automatically switches traffic signals to provide a clear route. The project leverages IoT sensors and embedded systems for real-time decision-making and improved emergency response efficiency.",
+      achievements: [
+        "Reduced average ambulance delay by 40%",
+        "Integrated IoT and sensor-based automation",
+        "Presented as a mini research project on smart mobility",
+      ]
     },
     {
-      title: "Sustainable Solutions Hub",
+      title: "EcoTransit – Sustainable Travel Reward System",
       category: "Sustainability",
-      image: "/sustainable-tech.png",
-      description: "Platform promoting global sustainability initiatives",
+      image: "/decoder.png",
+      description: "Led Team Decoderz in developing a platform that rewards eco-friendly travelers during a national-level hackathon.",
       details:
-        "Created a hub connecting sustainable projects worldwide. Built with modern web technologies and a focus on user experience and accessibility.",
-      achievements: ["500+ active users", "Global reach", "Award winner"],
+        "As the team leader of Decoderz, I guided the development of EcoTransit — an innovative platform promoting sustainable travel. The system detects eco-friendly travel modes such as walking, cycling, or public transport and rewards users with redeemable points. Built using React, Node.js, and Firebase with integrated GPS tracking and a gamified reward system to motivate green commuting.",
+      achievements: [
+        "Led a 4-member team to develop a full prototype within 36 hours",
+        "Shortlisted among top innovative sustainability projects",
+        "Promoted awareness of eco-friendly transportation through gamification"
+      ],
     },
     {
-      title: "Academic Collaboration Network",
-      category: "Social Impact",
-      image: "/academic-network-platform.jpg",
-      description: "Connecting scholars across continents for research collaboration",
+      title: "Green Hydrogen Blockchain – Decentralized Energy Tracking System Dashboard",
+      category: "Environment Concern",
+      image: "/gh.png",
+      description: "Led the development of a blockchain-based solution to ensure transparency and traceability in green hydrogen production and distribution.",
       details:
-        "Designed and developed a network for academic collaboration featuring real-time communication, project management tools, and publication sharing.",
-      achievements: ["1000+ members", "200+ collaborations", "Fast growing"],
+        "Developed during a sustainability-focused hackathon, this project leverages blockchain technology to track and verify green hydrogen generation, storage, and supply chains. It ensures secure, immutable data records, promoting accountability and reducing carbon fraud. The system integrates IoT sensors to capture real-time energy data, which is then stored on a decentralized ledger for transparent auditing.",
+      achievements: [
+        "Led a 4-member team during a 48-hour hackathon",
+        "Built a functional prototype integrating IoT and blockchain",
+        "Recognized among top projects for sustainable energy innovation"
+      ],
     },
     {
-      title: "Data Visualization Dashboard",
-      category: "Development",
-      image: "/data-visualization-analytics-dashboard.jpg",
-      description: "Real-time analytics dashboard for large-scale data",
+      title: "Tic Tac Toe – Interactive Game Development",
+      category: "Development & Logic Design",
+      image: "/game.jpg",
+      description: "Developed a classic two-player Tic Tac Toe game with interactive UI and winning logic.",
       details:
-        "Built an interactive dashboard for visualizing complex datasets using Recharts and D3.js. Handles millions of data points with smooth performance.",
-      achievements: ["Real-time updates", "Scalable", "Mobile responsive"],
+        "Created an engaging version of the traditional Tic Tac Toe game using HTML, CSS, and JavaScript (or Python/React if you used another stack). Implemented real-time win detection, draw handling, and restart functionality. Designed a responsive user interface with smooth animations and logical gameplay flow to enhance the user experience.",
+      achievements: [
+        "Built a fully functional two-player game",
+        "Integrated winning and draw algorithms",
+        "Responsive and visually appealing design"
+      ],
     },
     {
-      title: "Mentorship Program Platform",
-      category: "Education",
+      title: "Mentorship Program Platform – GD Core Initiative",
+      category: "Leadership & Education",
       image: "/mentorship-learning-platform.jpg",
-      description: "Digital platform connecting mentors and mentees globally",
+      description: "As GD Core member, led subcommittees in developing a digital platform connecting mentors and mentees across domains.",
       details:
-        "Developed a comprehensive mentorship platform with matching algorithms, progress tracking, and community features. Facilitated over 100 mentoring relationships.",
-      achievements: ["92% satisfaction", "100+ mentors", "Growing daily"],
+        "As part of the Encode Core team, I spearheaded the Mentorship Program initiative — a platform designed to connect mentors and mentees globally. Oversaw multiple subcommittees handling development, outreach, and community engagement. The platform includes smart mentor-mentee matching algorithms, progress tracking, and feedback analytics to ensure impactful learning experiences.",
+      achievements: [
+        "Guided 5+ subcommittees under GD Core",
+        "Facilitated 100+ mentorship connections",
+        "Achieved 92% participant satisfaction rate"
+      ],
     },
     {
-      title: "Research Data Management System",
-      category: "Technology",
-      image: "/research-data-management-system.jpg",
-      description: "Centralized system for managing research data and collaboration",
+      title: "Tourist Safety Portal – Cybersecurity & Blockchain Dashboard",
+      category: "Technology & Safety",
+      image: "/ts.png",
+      description: "Developed a blockchain-integrated portal ensuring traveler safety and secure data sharing.",
       details:
-        "Created a secure, scalable data management system for research teams. Includes version control, access management, and automated backup features.",
-      achievements: ["Enterprise grade", "Secure", "User friendly"],
+        "Contributed as a team member to the development of a Tourist Safety Portal aimed at enhancing traveler security using blockchain and cybersecurity technologies. The system features real-time incident reporting, location tracking, and a decentralized data dashboard that ensures transparency and tamper-proof recordkeeping. Focused on backend integration, user authentication, and secure data exchange mechanisms.",
+      achievements: [
+        "Collaborated in a 5-member development team",
+        "Implemented blockchain-based data verification",
+        "Enhanced security and transparency for traveler reports"
+      ],
     },
   ]
 

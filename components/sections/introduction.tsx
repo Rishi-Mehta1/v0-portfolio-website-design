@@ -49,9 +49,9 @@ export default function Introduction() {
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-8">
               {[
                 { label: "Projects Completed", value: "15+" },
-                { label: "Research Papers", value: "8" },
-                { label: "Awards & Recognition", value: "12" },
-                { label: "Global Collaborations", value: "6" },
+                { label: "Research Papers", value: "1" },
+                { label: "Awards & Recognition", value: "5" },
+                { label: "Freelancing", value: "6" },
               ].map((stat) => (
                 <div key={stat.label} className="p-4 rounded-lg glassmorphism dark:neon-glow">
                   <div className="text-3xl font-bold text-primary">{stat.value}</div>
@@ -66,10 +66,11 @@ export default function Introduction() {
             <h3 className="text-2xl font-bold">Journey</h3>
             <div className="space-y-6">
               {[
-                { year: "2024", title: "Research Leader", desc: "Leading innovative projects" },
-                { year: "2023", title: "Academic Excellence", desc: "Top honors and awards" },
-                { year: "2022", title: "Global Initiatives", desc: "International collaboration" },
-                { year: "2021", title: "Foundation", desc: "Started academic journey" },
+                 
+                { year: "2025", title: "Academic Achievements", desc: "Earned top grades and recognition for consistent performance and dedication" },
+                { year: "2024", title: "Collaborative Projects", desc: "Participated in interdisciplinary team projects and hackathons" },
+                { year: "2023", title: "New Beginnings", desc: "Embarked on my B.Tech journey in Computer Engineering at PDEU" },
+
               ].map((item) => (
                 <div key={item.year} className="relative pl-6 pb-4 border-l-2 border-primary/30">
                   <div className="absolute -left-2.5 top-1 w-4 h-4 rounded-full bg-primary" />

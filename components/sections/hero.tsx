@@ -1,7 +1,7 @@
-"use client"
+"use client";
 
-import { ArrowDown } from "lucide-react"
-import Link from "next/link"
+import { ArrowDown } from "lucide-react";
+import Link from "next/link";
 
 export default function Hero() {
   return (
@@ -23,15 +23,26 @@ export default function Hero() {
               Welcome to my portfolio ✨
             </div>
 
+            {/* Name */}
             <h1 className="text-5xl sm:text-6xl font-bold leading-tight text-balance">
-              <span className="bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">Kunj Shah</span>
+              <span className="bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
+                Kunj Shah
+              </span>
             </h1>
 
-            <p className="text-xl text-muted-foreground leading-relaxed">
-              Academic excellence meets creative innovation. I'm passionate about research, development, and making
-              meaningful contributions to the world through technology and collaboration.
+            {/* Academic Details */}
+            <div className="text-lg text-muted-foreground space-y-1">
+              <p>Pursuing B.Tech in Computer Engineering</p>
+              <p>Pandit Deendayal Energy University (PDEU)</p>
+
+            </div>
+
+            {/* Tagline */}
+            <p className="text-xl text-muted-foreground leading-relaxed italic border-l-4 border-primary pl-4">
+              “Engineering with curiosity, compassion, and creativity — building solutions that connect technology with purpose.”
             </p>
 
+            {/* Buttons */}
             <div className="flex flex-wrap gap-4 pt-4">
               <Link
                 href="#projects"
@@ -39,14 +50,16 @@ export default function Hero() {
               >
                 View My Portfolio <ArrowDown size={18} />
               </Link>
-              <Link
-                href="#resume"
+              <a
+                href="/Kunj_Shah_CV.pdf"
+                download="Kunj_Shah_CV.pdf"
                 className="px-8 py-3 border border-border rounded-lg font-semibold hover:bg-muted transition-colors"
               >
                 Download CV
-              </Link>
+              </a>
             </div>
 
+            {/* Quick Facts */}
             <div className="pt-8 space-y-2">
               <p className="text-sm text-muted-foreground">Quick Facts:</p>
               <ul className="space-y-2 text-sm">
@@ -74,8 +87,11 @@ export default function Hero() {
               <div className="absolute inset-4 bg-gradient-to-br from-primary to-accent rounded-3xl opacity-5" />
               <div className="absolute inset-0 flex items-center justify-center">
                 <div className="text-center">
-                  <div className="text-6xl font-bold text-primary dark:text-accent">KS</div>
-                  <p className="text-muted-foreground mt-2">Academic Leader</p>
+                  <img
+                    src="/profile-picture.jpg"
+                    alt="Kunj Shah"
+                    className="w-64 h-64 rounded-full border-4 border-white shadow-lg object-cover hover:scale-105 transition-all duration-500"
+                  />
                 </div>
               </div>
             </div>
@@ -89,5 +105,5 @@ export default function Hero() {
         <ArrowDown size={20} className="text-primary" />
       </div>
     </section>
-  )
+  );
 }

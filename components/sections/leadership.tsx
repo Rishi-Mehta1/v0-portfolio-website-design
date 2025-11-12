@@ -33,23 +33,23 @@ export default function Leadership() {
             {[
               {
                 title: "Research Lead",
-                org: "Innovation Research Lab",
-                desc: "Led 3 concurrent research projects with 12+ team members",
+                org: "MP Lab",
+                desc: "Led concurrent research projects with one team member",
               },
               {
-                title: "Department Representative",
+                title: "Class Representative",
                 org: "Academic Council",
-                desc: "Represented 200+ students in university decisions",
+                desc: "Represented 70+ students in university decisions",
               },
               {
                 title: "Mentor Coordinator",
-                org: "University Mentorship Program",
-                desc: "Managed mentoring relationships for 50+ students",
+                org: "Encode club",
+                desc: "Managed mentoring relationships for 5+ students",
               },
               {
                 title: "Event Organizer",
-                org: "Global Tech Summit",
-                desc: "Organized international conference with 500+ attendees",
+                org: "Various Tesseract and Encode Events",
+                desc: "Organized technical events with 100+ attendees",
               },
             ].map((role, idx) => (
               <div
@@ -75,31 +75,31 @@ export default function Leadership() {
               {
                 award: "Excellence in Research Award",
                 year: "2024",
-                org: "National Academic Institute",
+                org: "MP",
               },
               {
-                award: "Young Leader of the Year",
-                year: "2023",
-                org: "Global Scholars Forum",
+                award: "The Great Graphic Designer of the Year",
+                year: "2025",
+                org: "Encode",
               },
               {
-                award: "Innovation Excellence Prize",
+                award: "Social Activity Completion Certificate(CSSI)",
                 year: "2023",
-                org: "Tech Innovation Awards",
+                org: "Nirvana Arts Studio",
               },
               {
                 award: "Academic Achievement Award",
-                year: "2022",
+                year: "2024",
                 org: "University Honors",
               },
               {
                 award: "Leadership Recognition",
-                year: "2022",
+                year: "2024",
                 org: "Student Leadership Council",
               },
               {
-                award: "Scholarship Excellence",
-                year: "2021",
+                award: "Scholarship Excellence(MYSY)",
+                year: "2023-present",
                 org: "Merit-Based Award",
               },
             ].map((item, idx) => (

@@ -64,22 +64,22 @@ export default function FutureGoals() {
             <div className="space-y-6">
               {[
                 {
-                  timeframe: "2025",
+                  timeframe: "2027",
                   goal: "Complete Graduate Studies",
                   desc: "Pursue advanced degree in specialized research area",
                 },
                 {
-                  timeframe: "2025-2026",
+                  timeframe: "2027-2028",
                   goal: "Publish Breakthrough Research",
                   desc: "Publish 3+ papers in top-tier journals",
                 },
                 {
-                  timeframe: "2026",
+                  timeframe: "2029",
                   goal: "Establish Research Center",
                   desc: "Create innovation hub for collaborative research",
                 },
                 {
-                  timeframe: "2027+",
+                  timeframe: "2029+",
                   goal: "Global Leadership",
                   desc: "Lead international initiatives for positive change",
                 },

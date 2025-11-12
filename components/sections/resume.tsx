@@ -26,9 +26,11 @@ export default function Resume() {
       <div className="max-w-6xl mx-auto">
         <div className="flex justify-between items-start mb-12">
           <h2 className="text-4xl md:text-5xl font-bold scroll-reveal">Education & Experience</h2>
-          <button className="px-6 py-3 bg-primary text-primary-foreground rounded-lg font-semibold hover:shadow-lg hover:shadow-primary/50 transition-all inline-flex items-center gap-2 scroll-reveal">
-            <Download size={18} /> Download CV
-          </button>
+          <a 
+            href="/Kunj_Shah_CV.pdf"
+            download="Kunj_Shah_CV.pdf"
+            className="px-6 py-3 bg-primary text-primary-foreground rounded-lg font-semibold hover:shadow-lg hover:shadow-primary/50 transition-all inline-flex items-center gap-2 scroll-reveal">
+          Download CV</a>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
@@ -37,16 +39,16 @@ export default function Resume() {
             <h3 className="text-2xl font-bold">Education</h3>
             {[
               {
-                school: "Advanced Institute of Technology",
+                school: "Pandit Deendayal Energy University",
                 degree: "B.Tech in Computer Science",
-                year: "2021 - 2025",
-                highlights: "CGPA: 3.9/4.0, Dean's List",
+                year: "2023 - 2027",
+                highlights: "CGPA: 9.57",
               },
               {
-                school: "Technical Academy",
-                degree: "Advanced Diploma",
-                year: "2019 - 2021",
-                highlights: "Distinction, Top 1%",
+                school: "NTA",
+                degree: "Jee Mains",
+                year: "2021 - 2023",
+                highlights: "94.2 percentile",
               },
             ].map((edu, idx) => (
               <div
@@ -67,20 +69,20 @@ export default function Resume() {
             {[
               {
                 role: "Research Lead",
-                company: "Innovation Lab",
-                year: "2024 - Present",
-                highlights: "Leading 3 research projects",
+                company: "MP Lab",
+                year: "2024",
+                highlights: "Leading research paper",
               },
               {
-                role: "Academic Mentor",
-                company: "University Partnership",
-                year: "2023 - Present",
+                role: "GD Mentor",
+                company: "University Club",
+                year: "2024 - 2025",
                 highlights: "Mentoring 10+ students",
               },
               {
                 role: "Project Coordinator",
-                company: "Tech Initiative",
-                year: "2022 - 2023",
+                company: "Tech Nova",
+                year: "2024",
                 highlights: "Coordinated cross-functional teams",
               },
             ].map((exp, idx) => (

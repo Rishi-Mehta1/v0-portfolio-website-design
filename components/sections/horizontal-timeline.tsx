@@ -6,7 +6,7 @@ import { CheckCircle2, Zap, Star, Target, Award, Rocket, Sparkles, Crown } from 
 const timelineItems = [
   {
     id: 1,
-    year: "2019",
+    year: "2023",
     title: "Foundation",
     description: "Started academic journey",
     icon: Star,
@@ -14,35 +14,35 @@ const timelineItems = [
   },
   {
     id: 2,
-    year: "2020",
+    year: "2023",
+    title: "Admission at PDEU",
+    description: "Joined B.Tech in Computer Engineering",
+    icon: Zap,
+    milestone: "PDEU Enrollment",
+  },
+  {
+    id: 3,
+    year: "2023",
+    title: "Learn First Coding Language",
+    description: "Study core Btech subjects",
+    icon: Rocket,
+    milestone: "C/C++ Proficiency",
+  },
+  {
+    id: 4,
+    year: "2024",
     title: "First Project",
-    description: "Built initial research base",
+    description: "Built my first software and hardware project",
     icon: Zap,
     milestone: "Published First Paper",
   },
   {
-    id: 3,
-    year: "2021",
-    title: "Innovation Lab",
+    id: 5,
+    year: "2024",
+    title: "Initial Leadership",
     description: "Leading team projects",
     icon: Rocket,
     milestone: "Team Leadership",
-  },
-  {
-    id: 4,
-    year: "2022",
-    title: "Global Recognition",
-    description: "International awards",
-    icon: Award,
-    milestone: "Global Collaborations",
-  },
-  {
-    id: 5,
-    year: "2023",
-    title: "Research Pioneer",
-    description: "Advanced research initiatives",
-    icon: Sparkles,
-    milestone: "Multiple Publications",
   },
   {
     id: 6,
@@ -55,16 +55,16 @@ const timelineItems = [
   {
     id: 7,
     year: "2025",
-    title: "Graduate Studies",
-    description: "Pursuing advanced degree",
+    title: "Making various project and taking part in hackathon",
+    description: "Learning new things",
     icon: CheckCircle2,
-    milestone: "Post-Graduate Path",
+    milestone: "Explore outside world",
   },
   {
     id: 8,
     year: "2026+",
     title: "Future Vision",
-    description: "Shaping tomorrow",
+    description: "It is not ending, but just a start of new evolution",
     icon: Target,
     milestone: "Global Impact",
   },
@@ -135,10 +135,9 @@ export default function HorizontalTimeline() {
                       className={`
                         relative w-72 h-80 p-6 rounded-2xl transition-all duration-500 transform hover:scale-105
                         flex flex-col justify-between
-                        ${
-                          isActive
-                            ? "bg-gradient-to-br from-primary/10 to-primary/5 border-2 border-primary/50 dark:from-primary/20 dark:to-primary/10 dark:border-primary/80 dark:neon-glow"
-                            : "bg-muted/50 border-2 border-muted-foreground/20 dark:bg-card/30 dark:border-muted-foreground/30"
+                        ${isActive
+                          ? "bg-gradient-to-br from-primary/10 to-primary/5 border-2 border-primary/50 dark:from-primary/20 dark:to-primary/10 dark:border-primary/80 dark:neon-glow"
+                          : "bg-muted/50 border-2 border-muted-foreground/20 dark:bg-card/30 dark:border-muted-foreground/30"
                         }
                       `}
                     >
@@ -148,10 +147,9 @@ export default function HorizontalTimeline() {
                         <div
                           className={`
                             w-14 h-14 rounded-full flex items-center justify-center mb-4
-                            ${
-                              isActive
-                                ? "bg-primary/20 dark:bg-primary/40"
-                                : "bg-muted-foreground/10 dark:bg-muted-foreground/20"
+                            ${isActive
+                              ? "bg-primary/20 dark:bg-primary/40"
+                              : "bg-muted-foreground/10 dark:bg-muted-foreground/20"
                             }
                           `}
                         >
@@ -174,11 +172,10 @@ export default function HorizontalTimeline() {
                       {/* Bottom Section */}
                       <div className="flex items-center justify-between pt-4 border-t border-muted-foreground/10">
                         <span
-                          className={`text-xs font-semibold px-3 py-1 rounded-full ${
-                            isActive
-                              ? "bg-primary/20 text-primary dark:bg-primary/30 dark:text-primary"
-                              : "bg-muted-foreground/10 text-muted-foreground"
-                          }`}
+                          className={`text-xs font-semibold px-3 py-1 rounded-full ${isActive
+                            ? "bg-primary/20 text-primary dark:bg-primary/30 dark:text-primary"
+                            : "bg-muted-foreground/10 text-muted-foreground"
+                            }`}
                         >
                           {item.milestone}
                         </span>
@@ -225,9 +222,8 @@ export default function HorizontalTimeline() {
             {timelineItems.map((_, idx) => (
               <div
                 key={idx}
-                className={`h-1 rounded-full transition-all ${
-                  idx <= 5 ? "w-6 bg-primary dark:bg-primary" : "w-2 bg-muted-foreground/30"
-                }`}
+                className={`h-1 rounded-full transition-all ${idx <= 5 ? "w-6 bg-primary dark:bg-primary" : "w-2 bg-muted-foreground/30"
+                  }`}
               />
             ))}
           </div>
