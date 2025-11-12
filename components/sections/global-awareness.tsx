@@ -106,20 +106,7 @@ export default function GlobalAwareness() {
         </div>
 
         {/* Impact Statistics */}
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-6 scroll-reveal">
-          {[
-            { icon: "🌍", stat: "6", label: "Countries Engaged" },
-            { icon: "👥", stat: "200+", label: "Lives Impacted" },
-            { icon: "📚", stat: "15", label: "Research Projects" },
-            { icon: "🎯", stat: "8", label: "UN SDGs Addressed" },
-          ].map((item, idx) => (
-            <div key={idx} className="text-center p-6 rounded-lg glassmorphism dark:neon-glow">
-              <div className="text-4xl mb-2">{item.icon}</div>
-              <div className="text-3xl font-bold text-primary">{item.stat}</div>
-              <div className="text-muted-foreground mt-2">{item.label}</div>
-            </div>
-          ))}
-        </div>
+        
       </div>
     </section>
   )
