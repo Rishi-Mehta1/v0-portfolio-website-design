@@ -41,7 +41,7 @@ export default function Footer() {
               <div className="w-10 h-10 rounded-lg bg-gradient-to-br from-primary to-accent flex items-center justify-center">
                 <span className="text-primary-foreground font-bold">KS</span>
               </div>
-              <span className="font-bold text-xl">Kunj Shah</span>
+              <span className="font-bold text-xl">Rishi Mehta</span>
             </div>
             <p className="text-muted-foreground">
               Passionate about research, innovation, and creating positive global impact through technology and
@@ -109,7 +109,7 @@ export default function Footer() {
 
         {/* Bottom */}
         <div className="flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-muted-foreground">
-          <p>&copy; 2025 Kunj Shah. All rights reserved.</p>
+          <p>&copy; 2025 Rishi Mehta. All rights reserved.</p>
           <div className="flex gap-6">
             <a href="#" className="hover:text-primary transition-colors">
               Privacy Policy

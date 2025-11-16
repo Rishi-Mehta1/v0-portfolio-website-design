@@ -11,8 +11,8 @@ const poppins = Poppins({
 })
 
 export const metadata: Metadata = {
-  title: "Kunj Shah | Portfolio",
-  description: "Professional portfolio of Kunj Shah - Academic excellence, research, and innovation",
+  title: "Rishi Mehta | Portfolio",
+  description: "Professional portfolio of Rishi Mehta - Academic excellence, research, and innovation",
   generator: "v0.app",
   icons: {
     icon: [

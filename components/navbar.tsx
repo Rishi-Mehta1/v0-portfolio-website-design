@@ -53,7 +53,7 @@ export default function Navbar() {
             <div className="w-10 h-10 rounded-lg bg-gradient-to-br from-primary to-accent flex items-center justify-center transform group-hover:scale-110 transition-transform">
               <span className="text-primary-foreground font-bold text-lg">KS</span>
             </div>
-            <span className="font-bold text-xl hidden sm:inline text-foreground">Kunj Shah</span>
+            <span className="font-bold text-xl hidden sm:inline text-foreground">Rishi Mehta</span>
           </Link>
 
           {/* Desktop Navigation */}

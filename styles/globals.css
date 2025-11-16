@@ -39,6 +39,12 @@
   --sidebar-accent-foreground: oklch(0.205 0 0);
   --sidebar-border: oklch(0.922 0 0);
   --sidebar-ring: oklch(0.708 0 0);
+  /* Custom brand palette from provided artwork */
+  --brand-graphite: #333232;
+  --brand-powder: #F7B2AD;
+  --brand-almond: #CEB7B3;
+  --brand-silver: #B7B7B7;
+  --brand-teal: #9ABCA7;
 }
 
 .dark {
@@ -74,6 +80,12 @@
   --sidebar-accent-foreground: oklch(0.985 0 0);
   --sidebar-border: oklch(0.269 0 0);
   --sidebar-ring: oklch(0.439 0 0);
+  /* Dark-mode adjustments for brand palette */
+  --brand-graphite: #333232;
+  --brand-powder: #F7B2AD;
+  --brand-almond: #CEB7B3;
+  --brand-silver: #B7B7B7;
+  --brand-teal: #9ABCA7;
 }
 
 @theme inline {
@@ -123,5 +135,24 @@
   }
   body {
     @apply bg-background text-foreground;
+  }
+  /* Brand helpers */
+  .text-gradient-primary {
+    background-image: linear-gradient(90deg, var(--brand-powder), var(--brand-teal));
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+
+  .btn-cta {
+    background-image: linear-gradient(90deg, var(--brand-powder), var(--brand-almond));
+    color: var(--brand-graphite);
+    box-shadow: 0 6px 18px rgba(51,50,50,0.12);
+  }
+
+  .glass-card {
+    background: linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));
+    border: 1px solid rgba(167,160,160,0.06);
+    backdrop-filter: blur(10px);
   }
 }

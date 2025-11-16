@@ -1,70 +1,51 @@
-"use client"
+'use client';
 
-import { useState, useEffect } from "react"
-import Navbar from "@/components/navbar"
-import Hero from "@/components/sections/hero"
-import Introduction from "@/components/sections/introduction"
-import Resume from "@/components/sections/resume"
-import Projects from "@/components/sections/projects"
-import Skills from "@/components/sections/skills"
-import Leadership from "@/components/sections/leadership"
-import GlobalAwareness from "@/components/sections/global-awareness"
-import FutureGoals from "@/components/sections/future-goals"
-import Conclusion from "@/components/sections/conclusion"
-import Testimonials from "@/components/sections/testimonials"
-import Footer from "@/components/footer"
-import BackToTop from "@/components/back-to-top"
-import HorizontalTimeline from "@/components/sections/horizontal-timeline"
+import React from 'react';
+import { ThemeProvider } from '@/components/theme-provider';
+import { Navbar } from '@/components/navbar-enhanced';
+import { Hero } from '@/components/sections/hero-enhanced';
+import { Introduction } from '@/components/sections/introduction-enhanced';
+import { Resume } from '@/components/sections/resume-enhanced';
+import { Projects } from '@/components/sections/projects-enhanced';
+import { AdvancedSkills } from '@/components/sections/skills-enhanced';
+import { SwotAnalysis } from '@/components/sections/swot-enhanced';
+import { Testimonials } from '@/components/sections/testimonials-enhanced';
+import Footer from '@/components/footer';
 
 export default function Home() {
-  const [mounted, setMounted] = useState(false)
-
-  useEffect(() => {
-    setMounted(true)
-  }, [])
-
-  if (!mounted) return null
-
   return (
-    <>
-      <Navbar />
-      <main className="overflow-hidden">
-        <section id="home">
+    <ThemeProvider attribute="class" defaultTheme="dark" enableSystem>
+      <div className="min-h-screen bg-slate-950 text-white scroll-smooth">
+        {/* Fixed Navigation */}
+        <Navbar />
+
+        {/* Main Content */}
+        <main className="relative">
+          {/* Hero Section */}
           <Hero />
-        </section>
-        <section id="introduction">
+
+          {/* Introduction Section */}
           <Introduction />
-        </section>
-        <section id="timeline">
-          <HorizontalTimeline />
-        </section>
-        <section id="resume">
+
+          {/* Resume/CV Section */}
           <Resume />
-        </section>
-        <section id="projects">
+
+          {/* Projects Section */}
           <Projects />
-        </section>
-        <section id="skills">
-          <Skills />
-        </section>
-        <section id="leadership">
-          <Leadership />
-        </section>
-        <section id="global-awareness">
-          <GlobalAwareness />
-        </section>
-        <section id="future-goals">
-          <FutureGoals />
-        </section>
-        <section id="conclusion">
-          <Conclusion />
-        </section>
-        <section id="testimonials">
+
+          {/* Advanced Skills Section */}
+          <AdvancedSkills />
+
+          {/* SWOT Analysis Section */}
+          <SwotAnalysis />
+
+          {/* Testimonials Section */}
           <Testimonials />
-        </section>
-      </main>
-      <Footer />
-      <BackToTop />
-    </>
-  )
+        </main>
+
+        {/* Footer */}
+        <Footer />
+      </div>
+    </ThemeProvider>
+  );
 }

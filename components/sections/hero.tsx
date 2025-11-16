@@ -20,13 +20,13 @@ export default function Hero() {
           {/* Left Content */}
           <div className="space-y-6 animate-slideInUp">
             <div className="inline-block px-4 py-2 rounded-full bg-secondary text-secondary-foreground text-sm font-medium">
-              Welcome to my portfolio ✨
+              Welcome to my portfolio 
             </div>
 
             {/* Name */}
             <h1 className="text-5xl sm:text-6xl font-bold leading-tight text-balance">
               <span className="bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
-                Kunj Shah
+                
               </span>
             </h1>
 
@@ -88,8 +88,8 @@ export default function Hero() {
               <div className="absolute inset-0 flex items-center justify-center">
                 <div className="text-center">
                   <img
-                    src="/profile-picture.jpg"
-                    alt="Kunj Shah"
+                    src="C:\Users\mehta\Downloads\WhatsApp Image 2025-11-16 at 19.48.26_00b9c4ae.jpg"
+                    alt="Rishi Mehta"
                     className="w-64 h-64 rounded-full border-4 border-white shadow-lg object-cover hover:scale-105 transition-all duration-500"
                   />
                 </div>
